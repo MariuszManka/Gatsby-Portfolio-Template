@@ -2,7 +2,7 @@ const theme = {
   colors: {
     dark: "#000",
     white: "#D9D9D9",
-    gold: "#c9a614",
+    gold: "#cda018",
   },
   sizes: {
     extralg: "3rem",

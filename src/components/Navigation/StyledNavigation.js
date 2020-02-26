@@ -8,7 +8,7 @@ export const StyledNav = styled.nav`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 70px;
+  height: 100px;
   background-color: transparent;
   list-style-type: none;
 `
@@ -17,9 +17,8 @@ export const StyledLink = styled(Link)`
   padding: 5px 10px;
   margin: 8px;
   position: relative;
-  font-size: ${({ theme }) => theme.sizes.md};
+  font-size: ${({ theme }) => theme.sizes.lg};
   color: ${({ theme }) => theme.colors.white};
-  font-size: ${({ theme }) => theme.sizes.md};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,7 +32,7 @@ export const StyledLink = styled(Link)`
     position: absolute;
     background-color: ${({ theme }) => theme.colors.gold};
     width: 0%;
-    bottom: 0;
+    bottom: -3px;
   }
 
   &:hover {
@@ -51,7 +50,7 @@ export const StyledLink = styled(Link)`
 
 export const StyledLogo = styled(Image)`
   position: absolute !important;
-  top: 0;
-  left: 0;
+  top: 10px;
+  left: 15px;
   cursor: pointer;
 `
