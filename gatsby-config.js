@@ -8,13 +8,6 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `images`,
-        path: `${__dirname}/src/assets/images`,
-      },
-    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-styled-components`,
@@ -36,6 +29,14 @@ module.exports = {
         apiToken: process.env.API_KEY,
       },
     },
+    // {
+    //   resolve: `gatsby-source-filesystem`,
+    //   options: {
+    //     name: `images`,
+    //     path: `${__dirname}/src/assets/images`,
+    //   },
+    // },
+    //__________________________________________//
     // {
     //   resolve: `gatsby-plugin-manifest`,
     //   options: {
