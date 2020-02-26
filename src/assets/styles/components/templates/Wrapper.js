@@ -7,7 +7,6 @@ const Wrapper = styled.section`
   height: 100vh;
   background-color: ${({ theme, background }) =>
     background ? background : theme.colors.dark};
-  z-index: -1;
 `
 
 export default Wrapper

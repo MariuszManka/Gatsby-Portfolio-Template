@@ -25,6 +25,7 @@ export const StyledLink = styled(Link)`
   justify-content: center;
   align-items: center;
   transition: all 4s linear;
+  z-index: 100;
 
   &::before {
     transition: 300ms;
