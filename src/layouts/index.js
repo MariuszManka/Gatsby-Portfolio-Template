@@ -1,15 +1,18 @@
 import React from "react"
 import Navigation from "../components/Navigation/Navigation"
-import GlobalStyle from "../assets/styles/globalStyle"
+import GlobalStyle from "../assets/styles/global/globalStyle"
 import { ThemeProvider } from "styled-components"
-import theme from "../assets/styles/theme"
+import theme from "../assets/styles/global/theme"
+import Wrapper from "../assets/styles/components/templates/Wrapper"
 
 const MainLayout = ({ children }) => (
   <>
     <GlobalStyle />
     <ThemeProvider theme={theme}>
-      <Navigation />
-      {children}
+      <Wrapper>
+        <Navigation />
+        {children}
+      </Wrapper>
     </ThemeProvider>
   </>
 )

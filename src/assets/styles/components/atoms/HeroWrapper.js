@@ -9,6 +9,5 @@ const HeroWrapper = styled(Image)`
   top: ${({ top }) => (top ? top : 0)};
   overflow: hidden;
   object-fit: cover;
-  z-index: -1;
 `
 export default HeroWrapper

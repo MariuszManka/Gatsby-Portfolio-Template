@@ -11,6 +11,7 @@ export const StyledNav = styled.nav`
   height: 100px;
   background-color: transparent;
   list-style-type: none;
+  z-index: 100;
 `
 
 export const StyledLink = styled(Link)`
