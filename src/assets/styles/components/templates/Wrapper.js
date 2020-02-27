@@ -2,11 +2,12 @@ import styled from "styled-components"
 import theme from "../../global/theme"
 
 const Wrapper = styled.section`
-  position: relative;
-  width: 100vw;
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  grid-template-rows: 100px 1fr;
+  grid-template-areas: "hero nav" "hero content";
   height: 100vh;
-  background-color: ${({ theme, background }) =>
-    background ? background : theme.colors.dark};
+  overflow: hidden;
 `
 
 export default Wrapper

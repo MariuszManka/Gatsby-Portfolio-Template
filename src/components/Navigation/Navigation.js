@@ -1,7 +1,11 @@
-import React from "react"
-import Image from "gatsby-image"
+import React, { useState } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
-import { StyledLink, StyledNav, StyledLogo } from "./StyledNavigation"
+import {
+  StyledLink,
+  StyledNav,
+  StyledLogo,
+  LogoWrapper,
+} from "./StyledNavigation"
 
 const NavigationQuery = graphql`
   query NavigationQuery {
@@ -21,28 +25,43 @@ const NavigationQuery = graphql`
 `
 
 const Navigation = () => {
+  const [open, setOpen] = useState(false)
   const data = useStaticQuery(NavigationQuery)
   const {
     datoCmsNavigation: { options, logo },
   } = data
   return (
     <>
-      <StyledNav>
+      <LogoWrapper>
         <Link to="/">
           <StyledLogo fixed={logo.fixed} />
         </Link>
+      </LogoWrapper>
 
+      <StyledNav active={open}>
         {options.map(item => {
           return (
-            <>
-              <li key={item.id}>
-                <StyledLink activeClassName="active" to={item.slug}>
+            <div key={item.id}>
+              <li>
+                <StyledLink
+                  activeClassName="active"
+                  active={open}
+                  to={item.slug}
+                >
                   {item.option}
                 </StyledLink>
               </li>
-            </>
+            </div>
           )
         })}
+
+        {/* <Hamburger active={open} onClick={() => setOpen(!open)}>
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </Hamburger> */}
       </StyledNav>
     </>
   )

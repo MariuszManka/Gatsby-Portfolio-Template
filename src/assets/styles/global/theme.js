@@ -6,7 +6,7 @@ const theme = {
   },
   sizes: {
     extralg: "3rem",
-    lg: "1.8rem",
+    lg: "2rem",
     md: "1.6rem",
     sm: "1.2rem",
   },

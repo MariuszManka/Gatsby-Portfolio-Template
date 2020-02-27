@@ -1,10 +1,11 @@
 import React from "react"
 import MainLayout from "../layouts/index"
+import Heading from "../assets/styles/components/atoms/Heading"
 
 const ContactPage = () => {
   return (
     <MainLayout>
-      <h1>Contact</h1>
+      <Heading size="3rem">Contact</Heading>
     </MainLayout>
   )
 }
