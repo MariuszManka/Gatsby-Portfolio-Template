@@ -11,7 +11,9 @@ const IndexPage = ({ data }) => {
   return (
     <MainLayout>
       <HeroTextWrapper>
-        <Heading size={"calc(6rem + 1vw)"}>{name}</Heading>
+        <Heading capitalize size={"calc(6rem + 1vw)"}>
+          {name}
+        </Heading>
         <Paragraph size={"calc(1rem + 1vw)"}>{description}</Paragraph>
       </HeroTextWrapper>
     </MainLayout>

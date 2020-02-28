@@ -5,6 +5,8 @@ const StyledContent = styled.main`
   background-color: transparent;
   place-self: center;
   color: ${({ theme }) => theme.colors.white};
+  width: 50%;
+  text-align: center;
 `
 
 export default StyledContent
